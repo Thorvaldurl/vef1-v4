@@ -69,6 +69,7 @@
   
   img {
     max-width: 100%;
+    /* max-height: 100%; */
   }
   
   .button {
@@ -86,8 +87,20 @@
   }
   
   .button-secondary {
-    /* TODO */
+    /* margin-top: 1rem; */
+    display: inline-block;
+  
+
+    background-color: rgb(224, 221, 221);
+
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    word-break: initial;
+    text-decoration: none;
   }
+  
   
   /* Layout */
   
@@ -144,12 +157,7 @@
 
   }
 
-  /* main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  } */
-  
+
   /* TODO */
   
   /* Upplýsingasvæði */
@@ -157,84 +165,59 @@
 
  .mynd1 {
 
-float: right;
-/* margin-right: 50%; */
 max-width: 50%;
-/* margin: auto; */
-display: flex;
-/* padding: 8rem; */
-padding: 0 20px 20px 0;
+
+padding: 2rem;
 
 
 }
 
-  .info1 {
-  
-
- 
- 
-
-
-/* padding: 0rem;
-margin: 0 auto;
-margin-right: 1rem;
-margin-bottom: 1rem; */
-display: flex;
-float: left; 
-
-
-
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
 }  
+.reverserow{
+    flex-direction: row-reverse;
+  
+}
 
 
-.kicker1 {
-    float: left; 
-   
+.textwrap {
+    display: flex;
+    flex-direction: column;
+
+justify-content: center;
+padding: 2rem;
+gap: 0.875rem;
+
+}
+
+
+
+.tiltright  {
+
+    transform: rotate(3deg);
+}
+.tiltleft{
+    transform: rotate(-3deg);
+
+}
+
+.kicker {
+    font-weight: 14px;
+text-transform: uppercase;
+
     /* display: flex;*/
 
-     margin-bottom: 1rem; 
+     /* margin-bottom: 1rem;  */
 
      
     /* padding: 0 1rem; 
       margin: 1rem; */
 
-
-
 }
- .info1 h2 { 
-      /* float: left;  */
-     /* display: flex;
 
-      margin-bottom: 1rem;   */
-     /* padding:  1rem; 
-     margin: 1rem;  */
-   
-  
-} 
- .info1 p {
-     /* /* float: left;  */
-     
-     /* display: flex;
-
-      margin-bottom: 1rem;   */
-     /* border: 0 1rem; 
-     margin: 1rem;  */
-  
-  
-
-    
-} 
- .info1 p a {
-     /* float: left; 
-     display: flex;
-
-      margin-bottom: 1rem;  */
-   /*   padding: 0 1rem; 
-     margin: 1rem;  */
-   
-  
-
-}  
 
 
 
@@ -243,7 +226,79 @@ float: left;
   /* TODO */
   
   /* Cards */
+
+ 
   
+  .cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+  
+    
+  }
+
+  .card{
+   
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   
+    
+  }
+  
+  
+
+  .cards .card img {
+    /* border-top: 1px solid #ffffff; */
+    /* border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem; */
+    margin-top: 1rem;
+    height: 16rem;
+    width: 95%;
+    object-fit: cover;
+    order:-1
+    
+    
+    
+
+  }
+
+  
+  .texti{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 10rem;
+    border-bottom: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+  }
+    
+.examples h2 {
+    /* margin-top: 1rem; */
+    margin-left: 1rem;
+}
+
+.buttonefni{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+
+    padding: 0.5rem;
+    word-break: initial;
+    text-decoration: none;
+}
+
+
+
+
+
+
   /* TODO */
 
   footer {
